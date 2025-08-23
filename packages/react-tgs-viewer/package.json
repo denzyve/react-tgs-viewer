@@ -1,0 +1,42 @@
+{
+  "name": "react-tgs-viewer",
+  "version": "1.0.0",
+  "description": "React component for rendering Telegram .tgs stickers",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Maksym Sholda",
+    "email": "solda740@gmail.com"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/pako": "^2.0.4",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.6.0",
+    "pako": "^2.1.0"
+  }
+}
