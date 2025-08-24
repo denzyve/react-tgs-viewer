@@ -5,8 +5,8 @@
 }
 
 .tgs-url-container {
-  height: 500px;
-  width: 500px;
+  height: fit-content;
+  width: 555px;
 }
 
 .tgs-url-label {
@@ -20,4 +20,18 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  text-align: center;
+}
+
+.stickers-list {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stickers-list button {
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
 }
