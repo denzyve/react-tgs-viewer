@@ -8,7 +8,7 @@ interface LottieCacheEntry {
     size: number;
 }
 
-interface ReactTelegramStickerViewerProps {
+interface TgsViewerProps {
   tgsUrl: string;
   staticPreviewUrl?: string;
   corsProxyServerUrl?: string;
@@ -69,7 +69,7 @@ const optimizeFrameRate = (frameRate: number, quality: string) => {
 
 const calculateDataSize = (data: any) => new Blob([JSON.stringify(data)]).size;
 
-const ReactTelegramStickerViewer: React.FC<ReactTelegramStickerViewerProps> = ({
+const TgsViewer: React.FC<TgsViewerProps> = ({
   tgsUrl,
   staticPreviewUrl,
   corsProxyServerUrl = DEFAULT_CORS_PROXY,
@@ -293,4 +293,4 @@ const ReactTelegramStickerViewer: React.FC<ReactTelegramStickerViewerProps> = ({
   );
 };
 
-export default React.memo(ReactTelegramStickerViewer);
+export default React.memo(TgsViewer);
