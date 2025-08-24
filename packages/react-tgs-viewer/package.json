@@ -1,6 +1,6 @@
 {
   "name": "react-tgs-viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for rendering Telegram .tgs stickers",
   "type": "module",
   "private": false,
