@@ -4,14 +4,16 @@ import TgsViewer  from 'react-tgs-viewer';
 import './App.css'
 
 const arrayStickers = [
-  'https://denzyve.github.io/tgs-cdn/assets/sticker0.tgs',
-  'https://denzyve.github.io/tgs-cdn/assets/sticker1.tgs',
-  'https://denzyve.github.io/tgs-cdn/assets/sticker2.tgs',
-  'https://denzyve.github.io/tgs-cdn/assets/sticker3.tgs',
+  'https://cdn.denzyve.shop/assets/tgs/gift_5933937398953018107.tgs',
+  'https://cdn.denzyve.shop/assets/tgs/gift_6003456431095808759.tgs',
+  'https://cdn.denzyve.shop/assets/tgs/gift_5843762284240831056.tgs',
+  'https://cdn.denzyve.shop/assets/tgs/gift_5868455043362980631.tgs',
+  'https://cdn.denzyve.shop/assets/tgs/gift_5933737850477478635.tgs',
+  'https://cdn.denzyve.shop/assets/tgs/gift_6012435906336654262.tgs'
 ];
 
 function App() {
-  const [tgsUrl, setTgsUrl] = useState('https://denzyve.github.io/tgs-cdn/assets/sticker.tgs');
+  const [tgsUrl, setTgsUrl] = useState('https://cdn.denzyve.shop/assets/tgs/gift_5933937398953018107.tgs');
   const [key, setKey] = useState(0);
 
   useEffect(() => {
@@ -50,10 +52,44 @@ function App() {
               cursor: 'pointer'
             }}
           >
-            {`Стикер ${idx + 1}`}
+            {`Sticker ${idx + 1}`}
           </button>
         ))}
       </div>
+
+      <div
+        style={{
+          background: "#f5f5f5",
+          textAlign: "center",
+          padding: "12px",
+          marginTop: "24px",
+          borderRadius: "12px",
+          boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+        }}
+      >
+        <p
+          style={{
+            color: "#333",
+            fontSize: "14px",
+            margin: 0,
+          }}
+        >
+          🎁 For more stickers visit{" "}
+          <a
+            href="https://github.com/denzyve/cdn-telegram-gifts"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#2563eb",
+              fontWeight: 600,
+              textDecoration: "none",
+            }}
+          >
+            Denzyve CDN
+          </a>
+        </p>
+      </div>
+
     </>
   )
 }
