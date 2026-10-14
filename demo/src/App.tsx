@@ -4,16 +4,16 @@ import TgsViewer  from 'react-tgs-viewer';
 import './App.css'
 
 const arrayStickers = [
-  'https://cdn.denzyve.shop/assets/tgs/gift_5933937398953018107.tgs',
-  'https://cdn.denzyve.shop/assets/tgs/gift_6003456431095808759.tgs',
-  'https://cdn.denzyve.shop/assets/tgs/gift_5843762284240831056.tgs',
-  'https://cdn.denzyve.shop/assets/tgs/gift_5868455043362980631.tgs',
-  'https://cdn.denzyve.shop/assets/tgs/gift_5933737850477478635.tgs',
-  'https://cdn.denzyve.shop/assets/tgs/gift_6012435906336654262.tgs'
+  'https://denzyve.github.io/cdn-telegram-gifts/assets/tgs/gift_5933937398953018107.tgs',
+  'https://denzyve.github.io/cdn-telegram-gifts/assets/tgs/gift_6003456431095808759.tgs',
+  'https://denzyve.github.io/cdn-telegram-gifts/assets/tgs/gift_5843762284240831056.tgs',
+  'https://denzyve.github.io/cdn-telegram-gifts/assets/tgs/gift_5868455043362980631.tgs',
+  'https://denzyve.github.io/cdn-telegram-gifts/assets/tgs/gift_5933737850477478635.tgs',
+  'https://denzyve.github.io/cdn-telegram-gifts/assets/tgs/gift_6012435906336654262.tgs'
 ];
 
 function App() {
-  const [tgsUrl, setTgsUrl] = useState('https://cdn.denzyve.shop/assets/tgs/gift_5933937398953018107.tgs');
+  const [tgsUrl, setTgsUrl] = useState('https://denzyve.github.io/cdn-telegram-gifts/assets/tgs/gift_5933937398953018107.tgs');
   const [key, setKey] = useState(0);
 
   useEffect(() => {
